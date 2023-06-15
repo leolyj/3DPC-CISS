@@ -10,48 +10,57 @@ Despite the significant recent progress made on 3D point cloud semantic segmenta
 ## 2. Setup
 This code is tested with Python 3.7, Pytorch 1.7.0 and CUDA 11.0, you can follow these steps:
 ```
-   conda create -n 3DPC-CISS python=3.7
-   conda activate 3DPC-CISS
-   pip install torch==1.7.0+cu110 torchvision==0.8.1+cu110 torchaudio==0.7.0 -f https://download.pytorch.org/whl/torch_stable.html
-   pip install tensorboard transforms3d h5py torch-cluster==1.5.9 scikit-learn 
+conda create -n 3DPC-CISS python=3.7
+conda activate 3DPC-CISS
+pip install torch==1.7.0+cu110 torchvision==0.8.1+cu110 torchaudio==0.7.0 -f https://download.pytorch.org/whl/torch_stable.html
+pip install tensorboard transforms3d h5py torch-cluster==1.5.9 scikit-learn 
 ```
 
 ## 3. Usage
 ### Data preparation
 #### For S3DIS Dataset:
-1.  Download [S3DIS Dataset Aligned Version 1.2](http://buildingparser.stanford.edu/dataset.html)，decompress and put the download files in the ./datasets/S3DIS/.
-2.  Process the raw data into `.npy` format files by running:
-   ```
-   cd ./preprocess
-   python collect_s3dis_data.py --data_path '../datasets/S3DIS/Stanford3dDataset_v1.2_Aligned_Version'
-   ```
-   The  folder named `scenes` will be generated in `../datasets/S3DIS/` by default.
+1. Download [S3DIS Dataset Aligned Version 1.2](http://buildingparser.stanford.edu/dataset.html)，decompress and put the download files in the ./datasets/S3DIS/.
+2. Process the raw data into `.npy` format files by running:
+    ```
+    cd ./preprocess
+    python collect_s3dis_data.py --data_path '../datasets/S3DIS/Stanford3dDataset_v1.2_Aligned_Version'
+    ```
+    The folder named `scenes` will be generated in `../datasets/S3DIS/` by default.
 
 3. Split the rooms into blocks by running:
-    ```python room2blocks.py --data_path ../datasets/S3DIS/scenes```
-   The folder named  ` blocks_bs1_s1` will be generated in `../datasets/S3DIS/` by default.
+    ```
+    python room2blocks.py --data_path '../datasets/S3DIS/scenes'
+    ```
+    The folder named `blocks_bs1_s1` will be generated in `../datasets/S3DIS/` by default.
 
 #### For ScanNet Dataset:
 1. Download [ScanNet V2](http://www.scan-net.org/), put the download files (folder `scans` ) in the ./datasets/ScanNet/.
-2.  Process the raw data into `.npy` format files by running:
+2. Process the raw data into `.npy` format files by running:
     ```
     cd ./preprocess
     python collect_scannet_data.py --data_path '../datasets/ScanNet/scans'
     ```
     The folder named `scenes` will be generated in `../datasets/ScanNet/` by default.
+    
 3. Split the rooms into blocks by running:
-    ```python room2blocks.py --data_path '../datasets/ScanNet/scenes'```
+    ```
+    python room2blocks.py --data_path '../datasets/ScanNet/scenes'
+    ```
     The folder named `blocks_bs1_s1` will be generated in `../datasets/ScanNet/` by default.
 
 ### Training
-    If you want to train the baselines (i.e., joint training, freeze-and-add, finetuning, EWC and LwF methods) and our method of different settings, run:
-     ```bash ./scripts/bash_train_tasks.sh```
-     See file `./scripts/bash_train_tasks.sh` for details, you can modify the corresponding training scripts for your customized settings and hyperparameters.
+If you want to train the baselines (i.e., joint training, freeze-and-add, finetuning, EWC and LwF methods) and our method of different settings, run:
+    
+    bash ./scripts/bash_train_tasks.sh
+   
+See file `./scripts/bash_train_tasks.sh` for details, you can modify the corresponding training scripts for your customized settings and hyperparameters.
 
 ### Evaluation
-    After training, you can run the following script for evaluation:
-    ```bash ./scripts/bash_eval_tasks.sh```
-     See file `./scripts/bash_eval_tasks.sh` for details, you can modify the corresponding scripts for different requirements.
+After training, you can run the following script for evaluation:
+   
+    bash ./scripts/bash_eval_tasks.sh
+    
+See file `./scripts/bash_eval_tasks.sh` for details, you can modify the corresponding scripts for different requirements.
 
 ## 4. Results
 Results on two datasets of various settings are showing as follows:
