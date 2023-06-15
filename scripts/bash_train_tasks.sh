@@ -24,7 +24,7 @@ bash ./scripts/finetuning_incre_segmentor.sh
 bash ./scripts/train_ewc_segmentor.sh
 
 # Learning without Forgetting: LwF
- bash ./scripts/train_lwf_segmentor.sh
+bash ./scripts/train_lwf_segmentor.sh
 
 # 3DPC-CISS: Ours -> Extra multi-step increments '8-1' for S3DIS dataset, '15-1' for ScanNet dataset
 bash ./scripts/train_ours_segmentor.sh
