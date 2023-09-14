@@ -1,0 +1,86 @@
+-------------- End ----------------
+=====[Test] Iter: 0 | Loss: 0.6746 =====
+=====[Test] Iter: 1 | Loss: 0.6173 =====
+=====[Test] Iter: 2 | Loss: 0.4888 =====
+=====[Test] Iter: 3 | Loss: 0.9326 =====
+=====[Test] Iter: 4 | Loss: 0.6264 =====
+=====[Test] Iter: 5 | Loss: 0.8514 =====
+=====[Test] Iter: 6 | Loss: 1.5705 =====
+=====[Test] Iter: 7 | Loss: 0.6978 =====
+=====[Test] Iter: 8 | Loss: 0.8045 =====
+=====[Test] Iter: 9 | Loss: 0.6534 =====
+=====[Test] Iter: 10 | Loss: 0.7720 =====
+=====[Test] Iter: 11 | Loss: 1.2347 =====
+=====[Test] Iter: 12 | Loss: 0.8379 =====
+=====[Test] Iter: 13 | Loss: 0.6474 =====
+=====[Test] Iter: 14 | Loss: 1.0349 =====
+=====[Test] Iter: 15 | Loss: 0.7864 =====
+=====[Test] Iter: 16 | Loss: 0.6218 =====
+=====[Test] Iter: 17 | Loss: 0.9351 =====
+=====[Test] Iter: 18 | Loss: 0.6936 =====
+=====[Test] Iter: 19 | Loss: 1.1949 =====
+=====[Test] Iter: 20 | Loss: 0.8468 =====
+=====[Test] Iter: 21 | Loss: 0.6986 =====
+=====[Test] Iter: 22 | Loss: 0.5756 =====
+=====[Test] Iter: 23 | Loss: 1.0092 =====
+=====[Test] Iter: 24 | Loss: 0.7599 =====
+=====[Test] Iter: 25 | Loss: 1.0212 =====
+=====[Test] Iter: 26 | Loss: 0.6976 =====
+=====[Test] Iter: 27 | Loss: 1.4149 =====
+=====[Test] Iter: 28 | Loss: 0.6242 =====
+=====[Test] Iter: 29 | Loss: 1.0756 =====
+=====[Test] Iter: 30 | Loss: 0.6685 =====
+=====[Test] Iter: 31 | Loss: 0.6410 =====
+=====[Test] Iter: 32 | Loss: 0.8955 =====
+=====[Test] Iter: 33 | Loss: 0.8621 =====
+=====[Test] Iter: 34 | Loss: 1.0984 =====
+=====[Test] Iter: 35 | Loss: 0.9095 =====
+=====[Test] Iter: 36 | Loss: 0.6684 =====
+=====[Test] Iter: 37 | Loss: 0.7739 =====
+=====[Test] Iter: 38 | Loss: 0.8608 =====
+=====[Test] Iter: 39 | Loss: 1.0018 =====
+=====[Test] Iter: 40 | Loss: 1.0205 =====
+=====[Test] Iter: 41 | Loss: 0.6884 =====
+=====[Test] Iter: 42 | Loss: 1.2382 =====
+=====[Test] Iter: 43 | Loss: 0.9008 =====
+=====[Test] Iter: 44 | Loss: 0.6142 =====
+=====[Test] Iter: 45 | Loss: 0.7469 =====
+=====[Test] Iter: 46 | Loss: 0.6423 =====
+=====[Test] Iter: 47 | Loss: 0.6943 =====
+=====[Test] Iter: 48 | Loss: 0.7026 =====
+=====[Test] Iter: 49 | Loss: 0.9471 =====
+=====[Test] Iter: 50 | Loss: 0.6831 =====
+=====[Test] Iter: 51 | Loss: 0.8269 =====
+=====[Test] Iter: 52 | Loss: 0.9517 =====
+=====[Test] Iter: 53 | Loss: 0.6522 =====
+=====[Test] Iter: 54 | Loss: 0.9623 =====
+=====[Test] Iter: 55 | Loss: 1.2030 =====
+=====[Test] Iter: 56 | Loss: 0.6318 =====
+=====[Test] Iter: 57 | Loss: 0.6773 =====
+=====[Test] Iter: 58 | Loss: 0.4381 =====
+=====[Test] Iter: 59 | Loss: 0.8677 =====
+=====[Test] Iter: 60 | Loss: 0.7322 =====
+=====[Test] Iter: 61 | Loss: 0.5370 =====
+=====[Test] Iter: 62 | Loss: 0.4907 =====
+=====[Test] Iter: 63 | Loss: 0.6950 =====
+=====[Test] Iter: 64 | Loss: 1.0012 =====
+=====[Test] Iter: 65 | Loss: 0.9653 =====
+=====[Test] Iter: 66 | Loss: 0.7014 =====
+=====[Test] Iter: 67 | Loss: 0.6217 =====
+=====[Test] Iter: 68 | Loss: 1.0863 =====
+background class IoU: 0.351446
+Class_0 IoU: 0.886593
+Class_1 IoU: 0.965536
+Class_2 IoU: 0.733995
+Class_3 IoU: 0.004290
+Class_4 IoU: 0.088048
+Class_5 IoU: 0.428234
+Class_6 IoU: 0.265009
+Class_7 IoU: 0.642361
+Class_8 IoU: 0.565860
+Class_9 IoU: 0.185590
+Class_10 IoU: 0.388978
+Class_11 IoU: 0.245141
+Class_12 IoU: X
+===== [Test]: Accuracy: 0.808211 | mIoU: 0.449970 =====
+
